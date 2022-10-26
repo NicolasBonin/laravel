@@ -67,7 +67,7 @@ services:
   mariadb:
     image: docker.io/bitnami/mariadb:10.6
     environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      # ALLOW_EMPTY_PASSWORD is recommended only for development!!!!
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=bn_myapp
       - MARIADB_DATABASE=bitnami_myapp

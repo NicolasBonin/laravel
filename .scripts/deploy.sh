@@ -20,8 +20,8 @@ php artisan clear-compiled
 # Recreate cache
 php artisan optimize
 
-# Compile npm assets
-npm run prod
+# Compile npm assets if needed
+#npm run prod
 
 # Run database migrations
 php artisan migrate --force

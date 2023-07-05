@@ -14,10 +14,11 @@ jobs:
         shell: bash
         run: |
           dir ./
+          echo ${{ secrets.ANSIBLE_INVENTORY }}
       - name: Run ansible playbook
         uses: dawidd6/action-ansible-playbook@v2.5.0	
         with:
           playbook: ansible/deploy.yml
           directory: ./
-          key: ${{ secrets.ansible_ssh_private_key }}
-          inventory: ${{ secrets.ansible_inventory }}
+          key: ${{ secrets.ANSIBLE_SSH_PRIVATE_KEY }}
+          inventory: ${{ secrets.ANSIBLE_INVENTORY }}

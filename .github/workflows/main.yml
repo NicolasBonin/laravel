@@ -9,7 +9,11 @@ jobs:
   deploy-code:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - name: Do some checking
+        shell: bash
+        run: |
+          dir ./
       - name: Run ansible playbook
         uses: dawidd6/action-ansible-playbook@v2.5.0	
         with:

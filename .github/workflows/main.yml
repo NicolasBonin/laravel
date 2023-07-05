@@ -2,8 +2,8 @@ name: Publish on my server
 
 on:  
   push:
-    tags:
-      - '*'
+    branches: [production]
+  worklfow_dispatch:
 
 jobs:
   deploy-code:

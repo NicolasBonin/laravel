@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run ansible playbook
-        uses: dawidd6/action-ansible-playbook@2.5.0
+        uses: dawidd6/action-ansible-playbook@v2.5.0	
         with:
           playbook: ansible/deploy.yml
           directory: ./

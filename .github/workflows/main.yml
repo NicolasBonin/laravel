@@ -2,8 +2,8 @@ name: Publish on my server
 
 on:  
   push:
-    branches: [production]
-  worklfow_dispatch:
+    branches: [ production ]
+  workflow_dispatch:
 
 jobs:
   deploy-code:
